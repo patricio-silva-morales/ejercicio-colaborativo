@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carrusel Simple</title>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Carrusel Simple</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+      body {
+        background: #f6f7fb;
+      }
 
-        <style>
-            body {
-                background: #f6f7fb;
-            }
+      .carousel img {
+        height: 420px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
 
-            .carousel img {
-                height: 420px;
-                object-fit: cover;
-            }
-        </style>
-    </head>
-
-    <body>
+  <body>
+    <div class="container py-4">
+      <div><h1>Carrusel</h1></div>
 
         <div class="container py-4">
 
-            <div><h1>Carrusel</h1></div>
+            <div><h1>Carrusel 2</h1></div>
 
             <div id="carouselImagenes" class="carousel slide" data-ride="carousel">
 
@@ -31,37 +35,80 @@
                     <li data-target="#carouselImagenes" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselImagenes" data-slide-to="1"></li>
                     <li data-target="#carouselImagenes" data-slide-to="2"></li>
-                    <li data-target="#carouselImagenes" data-slide-to="3"></li>
+                    <li data-target="#carouselImagenes" data-slide-to="3"></li>                   
                 </ol>
 
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="https://www.forrajeslh.com/sites/default/files/styles/noticia-img/public/2022-07/ganado-extensivo.jpg?itok=wsmhI9PV" class="d-block w-100" alt="Vacas lejos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.lavanguardia.com/files/image_449_220/uploads/2019/09/27/5fa53a6489d21.jpeg" class="d-block w-100" alt="Vacas acercandose">
+                    </div>
                     <div class="carousel-item active">
-                        <img src="img/531-1200x600.jpg" class="d-block w-100" alt="Imagen 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/785-1200x600.jpg" class="d-block w-100" alt="Imagen 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/981-1200x600.jpg" class="d-block w-100" alt="Imagen 3">
+                        <img src="https://arba.pe/wp-content/uploads/2022/01/White-Essay-Comparison-Landscape-Optional-Meme-Post-de-Instagram-1200-x-600-px-3.png" class="d-block w-100" alt="Vacas Pastoreando">
                     </div>
                     <div class="carousel-item">
                         <img src="img/astero.jpg" class="d-block w-100" alt="Imagen 4">
                     </div>
                 </div>
 
-                <a class="carousel-control-prev" href="#carouselImagenes" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselImagenes2" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#carouselImagenes" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselImagenes2" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
 
             </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+      <div id="carouselImagenes2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselImagenes2" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselImagenes2" data-slide-to="1"></li>
+          <li data-target="#carouselImagenes2" data-slide-to="2"></li>
+        </ol>
 
-    </body>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/531-1200x600.jpg" class="d-block w-100" alt="Imagen 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/785-1200x600.jpg" class="d-block w-100" alt="Imagen 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/981-1200x600.jpg" class="d-block w-100" alt="Imagen 3" />
+          </div>
+        </div>
 
+        <a class="carousel-control-prev" href="#carouselImagenes2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselImagenes2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div>
+        <img src="img/531-1200x600.jpg" class="d-block w-100" alt="Imagen 1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Título de la Primera Imagen</h5>
+          <p>Una descripción de contexto al usuario.</p>
+          <a href="#" class="btn btn-primary">Saber más</a>
+        </div>
+      </div>
+    </div>
+    <div>
+        <img src="img/531-1200x600.jpg" class="d-block w-100" alt="Imagen 1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Título de la Primera Imagen</h5>
+          <p>Una descripción de contexto al usuario.</p>
+          <a href="#" class="btn btn-primary">Saber más</a>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
